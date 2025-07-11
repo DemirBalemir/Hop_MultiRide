@@ -1,0 +1,214 @@
+
+[
+  {
+    "id": 1,
+    "latitude": 39.92,
+    "longitude": 32.85,
+    "battery": 85,
+    "elevation": 868.9695434570312
+  },
+  {
+    "id": 2,
+    "latitude": 39.9212,
+    "longitude": 32.8515,
+    "battery": 72,
+    "elevation": 867.0333862304688
+  },
+  {
+    "id": 3,
+    "latitude": 39.9225,
+    "longitude": 32.853,
+    "battery": 90,
+    "elevation": 862.606201171875
+  },
+  {
+    "id": 4,
+    "latitude": 39.9187,
+    "longitude": 32.8493,
+    "battery": 65,
+    "elevation": 872.5980224609375
+  },
+  {
+    "id": 5,
+    "latitude": 39.9171,
+    "longitude": 32.852,
+    "battery": 78,
+    "elevation": 874.9196166992188
+  },
+  {
+    "id": 6,
+    "latitude": 39.9195,
+    "longitude": 32.854,
+    "battery": 50,
+    "elevation": 866.3638305664062
+  },
+  {
+    "id": 7,
+    "latitude": 39.923,
+    "longitude": 32.8555,
+    "battery": 91,
+    "elevation": 863.5339965820312
+  },
+  {
+    "id": 8,
+    "latitude": 39.9159,
+    "longitude": 32.848,
+    "battery": 44,
+    "elevation": 886.6901245117188
+  },
+  {
+    "id": 9,
+    "latitude": 39.9165,
+    "longitude": 32.8467,
+    "battery": 68,
+    "elevation": 879.0714111328125
+  },
+  {
+    "id": 10,
+    "latitude": 39.9241,
+    "longitude": 32.857,
+    "battery": 88,
+    "elevation": 864.2546997070312
+  },
+    {
+    "id": 11,
+    "latitude": 39.9228,
+    "longitude": 32.6971,
+    "battery": 80,
+    "elevation": 915.4
+  },
+  {
+    "id": 12,
+    "latitude": 39.9235,
+    "longitude": 32.6983,
+    "battery": 65,
+    "elevation": 910.7
+  },
+  {
+    "id": 13,
+    "latitude": 39.9250,
+    "longitude": 32.7002,
+    "battery": 90,
+    "elevation": 920.3
+  },
+  {
+    "id": 14,
+    "latitude": 39.9210,
+    "longitude": 32.6962,
+    "battery": 70,
+    "elevation": 912.9
+  },
+  {
+    "id": 15,
+    "latitude": 39.9202,
+    "longitude": 32.6995,
+    "battery": 50,
+    "elevation": 917.1
+  },
+  {
+    "id": 16,
+    "latitude": 39.9642,
+    "longitude": 32.5821,
+    "battery": 85,
+    "elevation": 870.6
+  },
+  {
+    "id": 17,
+    "latitude": 39.9655,
+    "longitude": 32.5800,
+    "battery": 60,
+    "elevation": 875.8
+  },
+  {
+    "id": 18,
+    "latitude": 39.9630,
+    "longitude": 32.5844,
+    "battery": 95,
+    "elevation": 867.3
+  },
+  {
+    "id": 19,
+    "latitude": 39.9668,
+    "longitude": 32.5815,
+    "battery": 72,
+    "elevation": 873.4
+  },
+  {
+    "id": 20,
+    "latitude": 39.9625,
+    "longitude": 32.5860,
+    "battery": 55,
+    "elevation": 869.2
+  },
+  {
+    "id": 21,
+    "latitude": 39.9200,
+    "longitude": 33.2371,
+    "battery": 78,
+    "elevation": 1132.5
+  },
+  {
+    "id": 22,
+    "latitude": 39.9212,
+    "longitude": 33.2390,
+    "battery": 88,
+    "elevation": 1135.7
+  },
+  {
+    "id": 23,
+    "latitude": 39.9225,
+    "longitude": 33.2355,
+    "battery": 45,
+    "elevation": 1130.2
+  },
+  {
+    "id": 24,
+    "latitude": 39.9190,
+    "longitude": 33.2340,
+    "battery": 95,
+    "elevation": 1140.9
+  },
+  {
+    "id": 25,
+    "latitude": 39.9180,
+    "longitude": 33.2368,
+    "battery": 68,
+    "elevation": 1138.3
+  },
+  {
+    "id": 26,
+    "latitude": 40.2385,
+    "longitude": 33.0335,
+    "battery": 80,
+    "elevation": 990.2
+  },
+  {
+    "id": 27,
+    "latitude": 40.2400,
+    "longitude": 33.0310,
+    "battery": 90,
+    "elevation": 987.6
+  },
+  {
+    "id": 28,
+    "latitude": 40.2370,
+    "longitude": 33.0350,
+    "battery": 70,
+    "elevation": 993.8
+  },
+  {
+    "id": 29,
+    "latitude": 40.2360,
+    "longitude": 33.0300,
+    "battery": 85,
+    "elevation": 995.1
+  },
+  {
+    "id": 30,
+    "latitude": 40.2390,
+    "longitude": 33.0340,
+    "battery": 60,
+    "elevation": 992.4
+  }
+
+]
