@@ -8,23 +8,15 @@ import (
 	"os"
 
 	"github.com/demirbalemir/hop/Hop_MultiRide/internal/model"
-	"github.com/joho/godotenv"
 )
 
 var Get_Elev = GetElevation
 
-func AddElevationToScooters(filepath string) error {
-	// Load .env
-	err := godotenv.Load()
-	if err != nil {
-		return fmt.Errorf("failed to load .env: %w", err)
-	}
-	apiKey := os.Getenv("GOOGLE_MAPS_API_KEY")
+func AddElevationToScooters(filepath string, apiKey string) error {
 	if apiKey == "" {
 		return fmt.Errorf("GOOGLE_MAPS_API_KEY not set")
 	}
 
-	// Read the scooters.json file
 	data, err := os.ReadFile(filepath)
 	if err != nil {
 		return fmt.Errorf("failed to read file: %w", err)
@@ -35,9 +27,8 @@ func AddElevationToScooters(filepath string) error {
 		return fmt.Errorf("failed to unmarshal JSON: %w", err)
 	}
 
-	// Add elevation to each
 	for i, scooter := range scooters {
-		elevation, err := GetElevation(scooter.Latitude, scooter.Longitude, apiKey)
+		elevation, err := Get_Elev(scooter.Latitude, scooter.Longitude, apiKey) // <-- ✅ USE MOCKABLE VERSION
 		if err != nil {
 			log.Printf("failed to get elevation for scooter %d: %v", scooter.ID, err)
 			continue
@@ -45,7 +36,6 @@ func AddElevationToScooters(filepath string) error {
 		scooters[i].Elevation = elevation
 	}
 
-	// Write back to file
 	updated, err := json.MarshalIndent(scooters, "", "  ")
 	if err != nil {
 		return fmt.Errorf("failed to marshal updated scooters: %w", err)
