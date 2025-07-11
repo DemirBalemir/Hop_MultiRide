@@ -14,13 +14,13 @@ type OSRMResponse struct {
 	} `json:"routes"`
 }
 
-func GetOSRMDistance(fromLng, fromLat, toLng, toLat float64) (float64, float64, error) {
+func GetOSRMDistance(client *http.Client, fromLng, fromLat, toLng, toLat float64) (float64, float64, error) {
 	url := fmt.Sprintf(
 		"http://localhost:5000/route/v1/driving/%.6f,%.6f;%.6f,%.6f?overview=false",
 		fromLng, fromLat, toLng, toLat,
 	)
 
-	resp, err := http.Get(url)
+	resp, err := client.Get(url)
 	if err != nil {
 		return 0, 0, fmt.Errorf("OSRM request failed: %w", err)
 	}

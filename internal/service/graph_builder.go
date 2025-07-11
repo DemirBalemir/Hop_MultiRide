@@ -2,6 +2,7 @@ package service
 
 import (
 	"log"
+	"net/http"
 
 	"github.com/demirbalemir/hop/Hop_MultiRide/internal/model"
 )
@@ -17,7 +18,7 @@ func BuildGraph(scooters []*model.Scooter) *model.Graph {
 				continue
 			}
 
-			distance, duration, err := GetOSRMDistance(from.Longitude, from.Latitude, to.Longitude, to.Latitude)
+			distance, duration, err := GetOSRMDistance(http.DefaultClient, from.Longitude, from.Latitude, to.Longitude, to.Latitude)
 			if err != nil {
 				log.Printf("Error fetching route from %d to %d: %v", i, j, err)
 				continue

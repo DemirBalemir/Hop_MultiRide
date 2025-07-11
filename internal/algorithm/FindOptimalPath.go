@@ -2,6 +2,7 @@ package algorithm
 
 import (
 	"container/heap"
+	"net/http"
 
 	"github.com/demirbalemir/hop/Hop_MultiRide/internal/model"
 	"github.com/demirbalemir/hop/Hop_MultiRide/internal/service"
@@ -15,7 +16,9 @@ type State struct {
 	Index       int
 }
 
-var GetDistance = service.GetOSRMDistance
+var GetDistance = func(fromLon, fromLat, toLon, toLat float64) (float64, float64, error) {
+	return service.GetOSRMDistance(http.DefaultClient, fromLon, fromLat, toLon, toLat)
+}
 
 type PriorityQueue []*State
 

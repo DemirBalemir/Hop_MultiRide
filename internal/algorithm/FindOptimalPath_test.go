@@ -46,7 +46,7 @@ func TestFindOptimalPath(t *testing.T) {
 				},
 				Edges: map[int]map[int]*model.Edge{
 					0: {
-						1: &model.Edge{DistanceM: 1000, DurationSec: 60},
+						1: &model.Edge{FromID: 0, ToID: 1, DistanceM: 1000, DurationSec: 60},
 					},
 					1: {},
 				},
@@ -56,7 +56,7 @@ func TestFindOptimalPath(t *testing.T) {
 			targetLon: 1.2,
 			mockDistanceFn: func(fromLon, fromLat, toLon, toLat float64) (float64, float64, error) {
 				if fromLat == 1.0 && fromLon == 1.0 {
-					return 50000, 1000, nil // not reachable directly
+					return 50000, 1000, nil // too far
 				}
 				return 20000, 300, nil // reachable from node 1
 			},
@@ -100,7 +100,10 @@ func TestFindOptimalPath(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
+			// Override the global GetDistance variable
+			original := GetDistance
 			GetDistance = tt.mockDistanceFn
+			defer func() { GetDistance = original }() // restore after test
 
 			result := FindOptimalPath(tt.graph, tt.startNode, tt.targetLat, tt.targetLon)
 
