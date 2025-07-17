@@ -22,8 +22,8 @@ func TestFindOptimalPath(t *testing.T) {
 		{
 			name: "Directly reachable from start",
 			graph: &model.Graph{
-				Nodes: []*model.Scooter{
-					{ID: 0, Latitude: 1.0, Longitude: 1.0, Battery: 100},
+				Nodes: map[int]*model.Scooter{
+					0: {ID: 0, Latitude: 1.0, Longitude: 1.0, Battery: 100},
 				},
 				Edges: map[int]map[int]*model.Edge{},
 			},
@@ -31,7 +31,7 @@ func TestFindOptimalPath(t *testing.T) {
 			targetLat: 1.1,
 			targetLon: 1.1,
 			mockDistanceFn: func(fromLon, fromLat, toLon, toLat float64) (float64, float64, error) {
-				return 20000, 300, nil // reachable
+				return 20000, 300, nil
 			},
 			expectNil:      false,
 			expectPath:     []int{0, -1},
@@ -40,13 +40,13 @@ func TestFindOptimalPath(t *testing.T) {
 		{
 			name: "One hop then reachable",
 			graph: &model.Graph{
-				Nodes: []*model.Scooter{
-					{ID: 0, Latitude: 1.0, Longitude: 1.0, Battery: 100},
-					{ID: 1, Latitude: 1.0, Longitude: 1.1, Battery: 100},
+				Nodes: map[int]*model.Scooter{
+					0: {ID: 0, Latitude: 1.0, Longitude: 1.0, Battery: 100},
+					1: {ID: 1, Latitude: 1.0, Longitude: 1.1, Battery: 100},
 				},
 				Edges: map[int]map[int]*model.Edge{
 					0: {
-						1: &model.Edge{FromID: 0, ToID: 1, DistanceM: 1000, DurationSec: 60},
+						1: {FromID: 0, ToID: 1, DistanceM: 1000, DurationSec: 60},
 					},
 					1: {},
 				},
@@ -56,9 +56,9 @@ func TestFindOptimalPath(t *testing.T) {
 			targetLon: 1.2,
 			mockDistanceFn: func(fromLon, fromLat, toLon, toLat float64) (float64, float64, error) {
 				if fromLat == 1.0 && fromLon == 1.0 {
-					return 50000, 1000, nil // too far
+					return 50000, 1000, nil
 				}
-				return 20000, 300, nil // reachable from node 1
+				return 20000, 300, nil
 			},
 			expectNil:      false,
 			expectPath:     []int{0, 1, -1},
@@ -67,8 +67,8 @@ func TestFindOptimalPath(t *testing.T) {
 		{
 			name: "No path available",
 			graph: &model.Graph{
-				Nodes: []*model.Scooter{
-					{ID: 0, Latitude: 1.0, Longitude: 1.0, Battery: 10},
+				Nodes: map[int]*model.Scooter{
+					0: {ID: 0, Latitude: 1.0, Longitude: 1.0, Battery: 10},
 				},
 				Edges: map[int]map[int]*model.Edge{},
 			},
@@ -76,15 +76,15 @@ func TestFindOptimalPath(t *testing.T) {
 			targetLat: 2.0,
 			targetLon: 2.0,
 			mockDistanceFn: func(fromLon, fromLat, toLon, toLat float64) (float64, float64, error) {
-				return 100000, 5000, nil // too far
+				return 100000, 5000, nil
 			},
 			expectNil: true,
 		},
 		{
 			name: "Distance API error",
 			graph: &model.Graph{
-				Nodes: []*model.Scooter{
-					{ID: 0, Latitude: 1.0, Longitude: 1.0, Battery: 100},
+				Nodes: map[int]*model.Scooter{
+					0: {ID: 0, Latitude: 1.0, Longitude: 1.0, Battery: 100},
 				},
 				Edges: map[int]map[int]*model.Edge{},
 			},
@@ -100,10 +100,9 @@ func TestFindOptimalPath(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			// Override the global GetDistance variable
 			original := GetDistance
 			GetDistance = tt.mockDistanceFn
-			defer func() { GetDistance = original }() // restore after test
+			defer func() { GetDistance = original }()
 
 			result := FindOptimalPath(tt.graph, tt.startNode, tt.targetLat, tt.targetLon)
 

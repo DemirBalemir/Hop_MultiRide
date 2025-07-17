@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"log"
 	"os"
@@ -22,10 +23,27 @@ func main() {
 		log.Fatalf("GOOGLE_MAPS_API_KEY not set")
 	}
 
-	// Step 1: Add elevation to scooters.json (in-place)
-	err = service.AddElevationToScooters("internal/data/scooters.json", apiKey)
-	if err != nil {
-		log.Fatalf("Failed to add elevation: %v", err)
+	//FLAGS
+	genScooters := flag.Bool("generate", false, "Generate scooter data")
+	addElevation := flag.Bool("elevation", false, "Add elevation to scooters.json")
+	flag.Parse()
+
+	if *genScooters {
+		err := data.GenerateScooters(0, 20, "internal/data/scooters.json")
+		if err != nil {
+			log.Fatalf("Failed to generate scooters: %v", err)
+		}
+		fmt.Println("Scooters generated.")
+		return
+	}
+
+	if *addElevation {
+		err := service.AddElevationToScooters("internal/data/scooters.json", apiKey)
+		if err != nil {
+			log.Fatalf("Failed to add elevation: %v", err)
+		}
+		fmt.Println("Elevation updated.")
+		return
 	}
 
 	// Step 2: Load scooters from JSON
@@ -38,9 +56,12 @@ func main() {
 	graph := service.BuildGraph(scooters)
 
 	// Example routing inputs
-	startNode := 17
+	startNode := 3
 	targetLat := 39.9479
 	targetLon := 33.0440
+	if _, ok := graph.Nodes[startNode]; !ok {
+		log.Fatalf("Start node %d not found — invalid start node", startNode)
+	}
 
 	// Step 4: Run optimal pathfinding
 	result := algorithm.FindOptimalPath(graph, startNode, targetLat, targetLon)
