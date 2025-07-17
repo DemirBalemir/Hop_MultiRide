@@ -29,7 +29,7 @@ func main() {
 	flag.Parse()
 
 	if *genScooters {
-		err := data.GenerateScooters(0, 75, "internal/data/scooters.json")
+		err := data.GenerateScooters(0, 50, "internal/data/scooters.json")
 		if err != nil {
 			log.Fatalf("Failed to generate scooters: %v", err)
 		}
@@ -56,7 +56,7 @@ func main() {
 	graph := service.BuildGraph(scooters)
 
 	// Example routing inputs
-	startNode := 32
+	startNode := 12
 	targetLat := 39.9479
 	targetLon := 33.0440
 	if _, ok := graph.Nodes[startNode]; !ok {
@@ -72,4 +72,7 @@ func main() {
 	fmt.Println("Path:", result.Path)
 	fmt.Printf("Total time: %.2f seconds\n", result.TimeSoFar)
 	fmt.Printf("Number of scooter switches: %d\n", result.SwitchCount)
+	totalCost := service.CalculateCost(result.TimeSoFar, result.SwitchCount)
+	fmt.Printf("Total cost: %.2f\n", totalCost)
+
 }

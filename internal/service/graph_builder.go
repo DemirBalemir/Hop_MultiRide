@@ -18,10 +18,14 @@ func BuildGraph(scooters []*model.Scooter) *model.Graph {
 	var mu sync.Mutex
 	var wg sync.WaitGroup
 
+	sem := make(chan struct{}, 20) // 20 seems fine
+
 	for _, from := range scooters {
 		wg.Add(1)
 		go func(from *model.Scooter) {
 			defer wg.Done()
+			sem <- struct{}{}        //  Acquire slot
+			defer func() { <-sem }() //  Release slot
 
 			localEdges := make(map[int]*model.Edge)
 

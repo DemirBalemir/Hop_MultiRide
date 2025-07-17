@@ -1,527 +1,352 @@
 [
   {
     "id": 0,
-    "latitude": 40.054891,
-    "longitude": 32.856529,
-    "battery": 32,
-    "elevation": 968.9
+    "latitude": 39.89302,
+    "longitude": 32.980916,
+    "battery": 8,
+    "elevation": 896.6
   },
   {
     "id": 1,
-    "latitude": 39.928246,
-    "longitude": 33.145011,
-    "battery": 39,
-    "elevation": 1099.3
+    "latitude": 39.873835,
+    "longitude": 33.065885,
+    "battery": 83,
+    "elevation": 1060.7
   },
   {
     "id": 2,
-    "latitude": 39.956163,
-    "longitude": 32.811352,
-    "battery": 17,
-    "elevation": 1011.8
+    "latitude": 39.937101,
+    "longitude": 33.002111,
+    "battery": 84,
+    "elevation": 959.1
   },
   {
     "id": 3,
-    "latitude": 40.131189,
-    "longitude": 32.984209,
-    "battery": 24,
-    "elevation": 1036.8
+    "latitude": 39.95384,
+    "longitude": 32.888433,
+    "battery": 99,
+    "elevation": 853
   },
   {
     "id": 4,
-    "latitude": 40.103393,
-    "longitude": 32.766074,
-    "battery": 19,
-    "elevation": 1034.8
+    "latitude": 40.167864,
+    "longitude": 32.581747,
+    "battery": 84,
+    "elevation": 883.8
   },
   {
     "id": 5,
-    "latitude": 40.060788,
-    "longitude": 33.147045,
-    "battery": 89,
-    "elevation": 1059.4
+    "latitude": 40.079418,
+    "longitude": 33.110993,
+    "battery": 66,
+    "elevation": 1078.4
   },
   {
     "id": 6,
-    "latitude": 40.162465,
-    "longitude": 32.774991,
-    "battery": 87,
-    "elevation": 987.8
+    "latitude": 40.168047,
+    "longitude": 32.782744,
+    "battery": 9,
+    "elevation": 1069.8
   },
   {
     "id": 7,
-    "latitude": 40.039154,
-    "longitude": 32.918144,
-    "battery": 54,
-    "elevation": 1096.6
+    "latitude": 40.072278,
+    "longitude": 32.730881,
+    "battery": 67,
+    "elevation": 951.5
   },
   {
     "id": 8,
-    "latitude": 39.999214,
-    "longitude": 32.806682,
-    "battery": 65,
-    "elevation": 949.7
+    "latitude": 39.88605,
+    "longitude": 32.653798,
+    "battery": 3,
+    "elevation": 980.4
   },
   {
     "id": 9,
-    "latitude": 40.054218,
-    "longitude": 32.671927,
-    "battery": 36,
-    "elevation": 915.1
+    "latitude": 40.046275,
+    "longitude": 32.812171,
+    "battery": 93,
+    "elevation": 875.5
   },
   {
     "id": 10,
-    "latitude": 40.073676,
-    "longitude": 32.953454,
-    "battery": 9,
-    "elevation": 936.7
+    "latitude": 40.06822,
+    "longitude": 33.161647,
+    "battery": 50,
+    "elevation": 1048.2
   },
   {
     "id": 11,
-    "latitude": 40.077048,
-    "longitude": 32.841004,
-    "battery": 46,
-    "elevation": 991.1
+    "latitude": 39.905502,
+    "longitude": 33.023076,
+    "battery": 87,
+    "elevation": 1072.8
   },
   {
     "id": 12,
-    "latitude": 39.99937,
-    "longitude": 33.068011,
-    "battery": 91,
-    "elevation": 998.6
+    "latitude": 39.895221,
+    "longitude": 32.714059,
+    "battery": 94,
+    "elevation": 1009.9
   },
   {
     "id": 13,
-    "latitude": 40.022912,
-    "longitude": 32.685491,
-    "battery": 67,
-    "elevation": 1070.4
+    "latitude": 39.848311,
+    "longitude": 32.718217,
+    "battery": 79,
+    "elevation": 1088.6
   },
   {
     "id": 14,
-    "latitude": 39.982425,
-    "longitude": 32.530488,
-    "battery": 19,
+    "latitude": 40.143691,
+    "longitude": 33.143503,
+    "battery": 52,
     "elevation": 888.5
   },
   {
     "id": 15,
-    "latitude": 39.83298,
-    "longitude": 32.721747,
-    "battery": 38,
-    "elevation": 878.9
+    "latitude": 39.997339,
+    "longitude": 33.169462,
+    "battery": 91,
+    "elevation": 921.6
   },
   {
     "id": 16,
-    "latitude": 40.085513,
-    "longitude": 32.964553,
-    "battery": 4,
-    "elevation": 898.4
+    "latitude": 39.876203,
+    "longitude": 33.121852,
+    "battery": 54,
+    "elevation": 1080.8
   },
   {
     "id": 17,
-    "latitude": 40.114761,
-    "longitude": 32.804349,
-    "battery": 38,
-    "elevation": 883.3
+    "latitude": 39.994773,
+    "longitude": 32.871264,
+    "battery": 69,
+    "elevation": 985.7
   },
   {
     "id": 18,
-    "latitude": 40.032965,
-    "longitude": 32.754898,
-    "battery": 17,
-    "elevation": 909.4
+    "latitude": 40.127309,
+    "longitude": 33.111436,
+    "battery": 86,
+    "elevation": 1082.3
   },
   {
     "id": 19,
-    "latitude": 39.999141,
-    "longitude": 33.19677,
-    "battery": 12,
-    "elevation": 881.4
+    "latitude": 40.164678,
+    "longitude": 32.932802,
+    "battery": 9,
+    "elevation": 895
   },
   {
     "id": 20,
-    "latitude": 39.848298,
-    "longitude": 32.627746,
-    "battery": 70,
-    "elevation": 877.2
+    "latitude": 40.121367,
+    "longitude": 32.730994,
+    "battery": 0,
+    "elevation": 921.2
   },
   {
     "id": 21,
-    "latitude": 40.133057,
-    "longitude": 33.173609,
-    "battery": 40,
-    "elevation": 1071.4
+    "latitude": 39.924804,
+    "longitude": 32.875361,
+    "battery": 74,
+    "elevation": 1033.4
   },
   {
     "id": 22,
-    "latitude": 40.115607,
-    "longitude": 33.007141,
-    "battery": 48,
-    "elevation": 912.4
+    "latitude": 39.997593,
+    "longitude": 32.86314,
+    "battery": 4,
+    "elevation": 917.8
   },
   {
     "id": 23,
-    "latitude": 40.086829,
-    "longitude": 32.818499,
-    "battery": 49,
-    "elevation": 1048.4
+    "latitude": 40.074973,
+    "longitude": 32.927016,
+    "battery": 81,
+    "elevation": 876
   },
   {
     "id": 24,
-    "latitude": 40.077241,
-    "longitude": 32.952027,
-    "battery": 92,
-    "elevation": 1076.6
+    "latitude": 39.985505,
+    "longitude": 32.823982,
+    "battery": 30,
+    "elevation": 939.9
   },
   {
     "id": 25,
-    "latitude": 40.090291,
-    "longitude": 32.90026,
-    "battery": 97,
-    "elevation": 886.7
+    "latitude": 39.865244,
+    "longitude": 33.026446,
+    "battery": 84,
+    "elevation": 864.6
   },
   {
     "id": 26,
-    "latitude": 40.018901,
-    "longitude": 32.54466,
-    "battery": 72,
-    "elevation": 932.4
+    "latitude": 39.990628,
+    "longitude": 33.081956,
+    "battery": 17,
+    "elevation": 925.4
   },
   {
     "id": 27,
-    "latitude": 40.064857,
-    "longitude": 32.996285,
-    "battery": 93,
-    "elevation": 888.5
+    "latitude": 39.992419,
+    "longitude": 32.529936,
+    "battery": 83,
+    "elevation": 1049.6
   },
   {
     "id": 28,
-    "latitude": 39.864188,
-    "longitude": 32.564977,
-    "battery": 18,
-    "elevation": 1050.8
+    "latitude": 39.906403,
+    "longitude": 33.176188,
+    "battery": 4,
+    "elevation": 1035.9
   },
   {
     "id": 29,
-    "latitude": 39.899157,
-    "longitude": 32.651294,
-    "battery": 90,
-    "elevation": 980
+    "latitude": 39.937077,
+    "longitude": 32.735647,
+    "battery": 9,
+    "elevation": 911.2
   },
   {
     "id": 30,
-    "latitude": 39.896409,
-    "longitude": 32.625415,
-    "battery": 65,
-    "elevation": 1092.8
-  },
-  {
-    "id": 31,
-    "latitude": 40.004536,
-    "longitude": 33.129891,
-    "battery": 32,
-    "elevation": 899.1
-  },
-  {
-    "id": 32,
-    "latitude": 40.032022,
-    "longitude": 32.735411,
-    "battery": 30,
-    "elevation": 876.5
-  },
-  {
-    "id": 33,
-    "latitude": 40.090313,
-    "longitude": 32.69709,
-    "battery": 68,
-    "elevation": 1065.3
-  },
-  {
-    "id": 34,
-    "latitude": 39.966236,
-    "longitude": 32.945564,
+    "latitude": 39.998127,
+    "longitude": 32.900801,
     "battery": 56,
     "elevation": 914.5
   },
   {
+    "id": 31,
+    "latitude": 39.944118,
+    "longitude": 32.670545,
+    "battery": 47,
+    "elevation": 1003
+  },
+  {
+    "id": 32,
+    "latitude": 39.902445,
+    "longitude": 33.198266,
+    "battery": 95,
+    "elevation": 982.6
+  },
+  {
+    "id": 33,
+    "latitude": 40.116795,
+    "longitude": 32.918297,
+    "battery": 82,
+    "elevation": 1085.4
+  },
+  {
+    "id": 34,
+    "latitude": 40.125715,
+    "longitude": 32.539505,
+    "battery": 65,
+    "elevation": 918.5
+  },
+  {
     "id": 35,
-    "latitude": 40.100583,
-    "longitude": 32.605008,
-    "battery": 53,
-    "elevation": 984.3
+    "latitude": 40.093736,
+    "longitude": 32.828212,
+    "battery": 89,
+    "elevation": 1008.4
   },
   {
     "id": 36,
-    "latitude": 39.928106,
-    "longitude": 32.948573,
-    "battery": 59,
-    "elevation": 942.6
+    "latitude": 40.052638,
+    "longitude": 33.058925,
+    "battery": 15,
+    "elevation": 911.2
   },
   {
     "id": 37,
-    "latitude": 40.132508,
-    "longitude": 32.802609,
-    "battery": 69,
-    "elevation": 884.4
-  },
-  {
-    "id": 38,
-    "latitude": 39.97598,
-    "longitude": 32.667508,
-    "battery": 16,
+    "latitude": 39.862965,
+    "longitude": 33.123054,
+    "battery": 46,
     "elevation": 1057.6
   },
   {
+    "id": 38,
+    "latitude": 39.883238,
+    "longitude": 32.620358,
+    "battery": 96,
+    "elevation": 1058.1
+  },
+  {
     "id": 39,
-    "latitude": 40.156762,
-    "longitude": 32.545193,
-    "battery": 83,
-    "elevation": 1097
+    "latitude": 39.896747,
+    "longitude": 32.933732,
+    "battery": 72,
+    "elevation": 1038.5
   },
   {
     "id": 40,
-    "latitude": 40.179216,
-    "longitude": 32.626499,
-    "battery": 9,
-    "elevation": 957.9
+    "latitude": 39.822728,
+    "longitude": 32.933406,
+    "battery": 95,
+    "elevation": 993.3
   },
   {
     "id": 41,
-    "latitude": 40.115338,
-    "longitude": 32.934105,
-    "battery": 3,
-    "elevation": 1095.4
+    "latitude": 40.010089,
+    "longitude": 32.990081,
+    "battery": 6,
+    "elevation": 878.6
   },
   {
     "id": 42,
-    "latitude": 40.133214,
-    "longitude": 32.907922,
-    "battery": 52,
-    "elevation": 1002.5
+    "latitude": 40.137398,
+    "longitude": 32.830203,
+    "battery": 12,
+    "elevation": 902.8
   },
   {
     "id": 43,
-    "latitude": 39.856391,
-    "longitude": 32.862611,
-    "battery": 98,
-    "elevation": 946.6
+    "latitude": 39.811128,
+    "longitude": 33.135502,
+    "battery": 68,
+    "elevation": 939.6
   },
   {
     "id": 44,
-    "latitude": 40.086574,
-    "longitude": 33.033328,
-    "battery": 44,
-    "elevation": 879.7
+    "latitude": 40.087012,
+    "longitude": 32.584802,
+    "battery": 17,
+    "elevation": 897.2
   },
   {
     "id": 45,
-    "latitude": 39.982469,
-    "longitude": 33.022041,
-    "battery": 62,
-    "elevation": 1075.9
+    "latitude": 39.914055,
+    "longitude": 32.561423,
+    "battery": 95,
+    "elevation": 965.5
   },
   {
     "id": 46,
-    "latitude": 40.148168,
-    "longitude": 32.647414,
-    "battery": 24,
-    "elevation": 1028.8
+    "latitude": 40.113654,
+    "longitude": 32.531312,
+    "battery": 80,
+    "elevation": 1073
   },
   {
     "id": 47,
-    "latitude": 40.090526,
-    "longitude": 32.884305,
-    "battery": 2,
-    "elevation": 1052.7
+    "latitude": 40.118119,
+    "longitude": 32.591369,
+    "battery": 27,
+    "elevation": 1063.2
   },
   {
     "id": 48,
-    "latitude": 40.063457,
-    "longitude": 33.114218,
-    "battery": 42,
-    "elevation": 990
+    "latitude": 39.938322,
+    "longitude": 33.139521,
+    "battery": 75,
+    "elevation": 954.7
   },
   {
     "id": 49,
-    "latitude": 40.007905,
-    "longitude": 32.911555,
-    "battery": 34,
-    "elevation": 1083.4
-  },
-  {
-    "id": 50,
-    "latitude": 39.939328,
-    "longitude": 33.071109,
-    "battery": 11,
-    "elevation": 907
-  },
-  {
-    "id": 51,
-    "latitude": 39.945013,
-    "longitude": 32.778141,
-    "battery": 6,
-    "elevation": 959
-  },
-  {
-    "id": 52,
-    "latitude": 39.929422,
-    "longitude": 33.199317,
-    "battery": 67,
-    "elevation": 923.7
-  },
-  {
-    "id": 53,
-    "latitude": 39.845941,
-    "longitude": 32.921912,
-    "battery": 83,
-    "elevation": 912.5
-  },
-  {
-    "id": 54,
-    "latitude": 40.15617,
-    "longitude": 32.99115,
-    "battery": 62,
-    "elevation": 903.3
-  },
-  {
-    "id": 55,
-    "latitude": 40.150792,
-    "longitude": 32.911419,
-    "battery": 69,
-    "elevation": 971.5
-  },
-  {
-    "id": 56,
-    "latitude": 40.182648,
-    "longitude": 32.914953,
-    "battery": 57,
-    "elevation": 968.7
-  },
-  {
-    "id": 57,
-    "latitude": 40.175334,
-    "longitude": 32.88886,
-    "battery": 23,
-    "elevation": 893.9
-  },
-  {
-    "id": 58,
-    "latitude": 40.006384,
-    "longitude": 32.735368,
-    "battery": 56,
-    "elevation": 901.6
-  },
-  {
-    "id": 59,
-    "latitude": 40.086485,
-    "longitude": 32.644027,
-    "battery": 70,
-    "elevation": 885.1
-  },
-  {
-    "id": 60,
-    "latitude": 39.86693,
-    "longitude": 32.84775,
-    "battery": 13,
-    "elevation": 894.8
-  },
-  {
-    "id": 61,
-    "latitude": 39.871944,
-    "longitude": 32.562204,
-    "battery": 86,
-    "elevation": 894.7
-  },
-  {
-    "id": 62,
-    "latitude": 39.941201,
-    "longitude": 32.909532,
-    "battery": 55,
-    "elevation": 968.8
-  },
-  {
-    "id": 63,
-    "latitude": 39.984542,
-    "longitude": 33.057223,
-    "battery": 64,
-    "elevation": 920.2
-  },
-  {
-    "id": 64,
-    "latitude": 39.827901,
-    "longitude": 32.699703,
-    "battery": 92,
-    "elevation": 1013
-  },
-  {
-    "id": 65,
-    "latitude": 40.087997,
-    "longitude": 32.676973,
-    "battery": 48,
-    "elevation": 1035.9
-  },
-  {
-    "id": 66,
-    "latitude": 40.080688,
-    "longitude": 32.944753,
-    "battery": 73,
-    "elevation": 857.6
-  },
-  {
-    "id": 67,
-    "latitude": 39.862384,
-    "longitude": 32.787106,
-    "battery": 100,
-    "elevation": 986.4
-  },
-  {
-    "id": 68,
-    "latitude": 40.194551,
-    "longitude": 32.527859,
-    "battery": 97,
-    "elevation": 862.7
-  },
-  {
-    "id": 69,
-    "latitude": 39.881481,
-    "longitude": 32.88053,
-    "battery": 85,
-    "elevation": 1027.2
-  },
-  {
-    "id": 70,
-    "latitude": 39.80061,
-    "longitude": 32.621256,
-    "battery": 29,
-    "elevation": 1016.4
-  },
-  {
-    "id": 71,
-    "latitude": 40.013093,
-    "longitude": 32.946925,
-    "battery": 71,
-    "elevation": 933.7
-  },
-  {
-    "id": 72,
-    "latitude": 40.101903,
-    "longitude": 32.73472,
-    "battery": 25,
-    "elevation": 1050.6
-  },
-  {
-    "id": 73,
-    "latitude": 40.073068,
-    "longitude": 33.162441,
-    "battery": 53,
-    "elevation": 1064.4
-  },
-  {
-    "id": 74,
-    "latitude": 39.914257,
-    "longitude": 32.654602,
-    "battery": 70,
-    "elevation": 932.8
+    "latitude": 39.820998,
+    "longitude": 32.874598,
+    "battery": 5,
+    "elevation": 975.3
   }
 ]
