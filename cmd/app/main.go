@@ -29,7 +29,7 @@ func main() {
 	flag.Parse()
 
 	if *genScooters {
-		err := data.GenerateScooters(0, 20, "internal/data/scooters.json")
+		err := data.GenerateScooters(0, 75, "internal/data/scooters.json")
 		if err != nil {
 			log.Fatalf("Failed to generate scooters: %v", err)
 		}
@@ -56,7 +56,7 @@ func main() {
 	graph := service.BuildGraph(scooters)
 
 	// Example routing inputs
-	startNode := 3
+	startNode := 32
 	targetLat := 39.9479
 	targetLon := 33.0440
 	if _, ok := graph.Nodes[startNode]; !ok {
@@ -65,7 +65,9 @@ func main() {
 
 	// Step 4: Run optimal pathfinding
 	result := algorithm.FindOptimalPath(graph, startNode, targetLat, targetLon)
-
+	if result == nil {
+		log.Fatalf("Pathfinding failed — no valid path from startNode %d to destination", startNode)
+	}
 	// Step 5: Print results
 	fmt.Println("Path:", result.Path)
 	fmt.Printf("Total time: %.2f seconds\n", result.TimeSoFar)

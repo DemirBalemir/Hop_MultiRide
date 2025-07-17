@@ -2,6 +2,7 @@ package algorithm
 
 import (
 	"container/heap"
+	"log"
 	"net/http"
 
 	"github.com/demirbalemir/hop/Hop_MultiRide/internal/model"
@@ -43,9 +44,26 @@ func (pq *PriorityQueue) Pop() any {
 }
 
 func FindOptimalPath(graph *model.Graph, startNode int, targetLat, targetLon float64) *State {
+
 	visited := make(map[int]bool)
 	pq := &PriorityQueue{}
 	heap.Init(pq)
+
+	startScooter := graph.Nodes[startNode]
+	if startScooter == nil {
+		log.Printf("StartNode %d doesn't exist in graph", startNode)
+		return nil
+	}
+
+	// Direct to destination check before anything
+	maxRangeMeters := 35.0 * (float64(startScooter.Battery) / 100.0) * 1000
+	distToTarget, _, err := GetDistance(startScooter.Longitude, startScooter.Latitude, targetLon, targetLat)
+
+	// ✅ If no outgoing edges and can't reach destination directly, exit early
+	if len(graph.Edges[startNode]) == 0 && (err != nil || distToTarget > maxRangeMeters) {
+		log.Printf("StartNode %d can't reach any scooter nor destination directly", startNode)
+		return nil
+	}
 
 	heap.Push(pq, &State{
 		NodeID:      startNode,
