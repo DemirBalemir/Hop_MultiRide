@@ -14,7 +14,7 @@ type OSRMResponse struct {
 	} `json:"routes"`
 }
 
-func GetOSRMDistance(client *http.Client, fromLng, fromLat, toLng, toLat float64) (float64, float64, error) {
+var GetOSRMDistance = func(client *http.Client, fromLng, fromLat, toLng, toLat float64) (float64, float64, error) {
 	url := fmt.Sprintf(
 		"http://localhost:5000/route/v1/driving/%.6f,%.6f;%.6f,%.6f?overview=false",
 		fromLng, fromLat, toLng, toLat,
